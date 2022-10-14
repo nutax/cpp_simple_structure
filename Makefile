@@ -1,6 +1,6 @@
 TARGET  = $(notdir $(CURDIR))
 
-SRCEXT	= .c
+SRCEXT	= .cpp
 INCEXT	= .h
 OBJEXT	= .o
 
@@ -8,11 +8,11 @@ SRCDIR	= src
 INCDIR	= include
 OBJDIR	= bin
 
-CC	= gcc
-LD	= gcc
+CC	= g++
+LD	= g++
 
 LDFLAGS	= -lm -lpthread
-CCFLAGS	= -std=gnu99 -g -ggdb -Og -Wall -Wextra -pedantic
+CCFLAGS	= -std=c++17 -g -ggdb -Og -Wall -Wextra -pedantic
 
 SRCTREE	= $(shell find $(SRCDIR) -type d)
 INCS	= $(shell find $(INCDIR) -type f -name '*$(INCEXT)')

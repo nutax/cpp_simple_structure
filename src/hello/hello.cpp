@@ -1,5 +1,5 @@
 #include "hello/hello.h"
 
 void hello(){
-    printf("hello\n");
+    std::cout << "hello\n";
 }
