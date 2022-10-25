@@ -8,11 +8,11 @@ SRCDIR	= src
 INCDIR	= include
 OBJDIR	= bin
 
-CC	= g++
-LD	= g++
+CC	= g++-11
+LD	= g++-11
 
 LDFLAGS	= -lm -lpthread
-CCFLAGS	= -std=c++17 -g -ggdb -Og -Wall -Wextra -pedantic
+CCFLAGS	= -std=c++2a -Ofast -march=native -w
 
 SRCTREE	= $(shell find $(SRCDIR) -type d)
 INCS	= $(shell find $(INCDIR) -type f -name '*$(INCEXT)')
